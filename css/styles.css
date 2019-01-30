@@ -1,0 +1,99 @@
+body {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  /* background-image: url(../images/space-bg.jpg); */
+  background-color: #3a3a3a;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.main {
+  width: 100%;
+
+  text-align: center;
+}
+
+.main img {
+  width: 200px;
+  border-radius: 50%;
+}
+
+ul img {
+  max-width: 100%;
+}
+
+
+ul {
+  display: flex;
+  justify-content:  center;
+  list-style: none;
+}
+
+.top,
+.bottom {
+  display: none;
+}
+
+.top li,
+.bottom li{
+   animation: rotateMove 5s infinite;
+    animation-fill-mode: forwards;
+}
+
+@keyframes rotateMove {
+
+from {
+  transform: rotate(0deg);
+}
+
+to {
+  transform: rotate(360deg);
+}
+
+}
+
+
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login img{
+  width: 60px;
+  height: 60px;
+}
+
+.login span {
+  color: #FFF;
+  font-size: 3rem;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+.login button {
+  background: #0092e8;
+  border: none;
+  padding: 15px 20px;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 500px;
+}
+
+.login button:active {
+  background: lightblue;
+}
